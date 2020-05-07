@@ -184,7 +184,7 @@ aside {
     margin-top: 0;
 }
 
-/*MEDIA QUERY*/
+/*MEDIA QUERIES*/
 @media screen and (max-width: 772px) {
     
     #bloc_page {
@@ -209,7 +209,6 @@ aside {
     }
 }
 
-/*MEDIA QUERY*/
 @media screen and (max-width: 550px) {
     
     #identite h1 {
@@ -224,7 +223,7 @@ aside {
         flex-direction: column;
     }
     
-    .details {
+    .details, .date {
         width: 100%;
     }
 }

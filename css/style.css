@@ -169,7 +169,7 @@ aside {
 #icones i, #icones img {
     border: solid #37474F 0.09rem;
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-    border-radius: 50%;
+    border-radius: 35%;
 }
 
 .coordonnees {

@@ -1,14 +1,13 @@
 @font-face {
     font-family: 'aileronultralight';
-    src: url('../polices/aileron-fontfacekit/webfonts/aileron_ultralight_macroman/Aileron-UltraLight-webfont.eot');
-    src: url('../polices/aileron-fontfacekit/webfonts/aileron_ultralight_macroman/Aileron-UltraLight-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../polices/aileron-fontfacekit/webfonts/aileron_ultralight_macroman/Aileron-UltraLight-webfont.woff2') format('woff2'),
-         url('../polices/aileron-fontfacekit/webfonts/aileron_ultralight_macroman/Aileron-UltraLight-webfont.woff') format('woff'),
-         url('../polices/aileron-fontfacekit/webfonts/aileron_ultralight_macroman/Aileron-UltraLight-webfont.ttf') format('truetype'),
-         url('../polices/aileron-fontfacekit/webfonts/aileron_ultralight_macroman/Aileron-UltraLight-webfont.svg#aileronultralight') format('svg');
+    src: url('../polices/webfontkit-aileron/aileron-ultralight-webfont.eot');
+    src: url('../polices/webfontkit-aileron/aileron-ultralight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../polices/webfontkit-aileron/aileron-ultralight-webfont.woff2') format('woff2'),
+         url('../polices/webfontkit-aileron/aileron-ultralight-webfont.woff') format('woff'),
+         url('../polices/webfontkit-aileron/aileron-ultralight-webfont.ttf') format('truetype'),
+         url('../polices/webfontkit-aileron/aileron-ultralight-webfont.svg#aileronultralight') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 /* Général */
@@ -186,7 +185,7 @@ aside {
 }
 
 /*MEDIA QUERY*/
-@media screen and (max-width: 710px) {
+@media screen and (max-width: 772px) {
     
     #bloc_page {
         width: 100%;
@@ -207,5 +206,25 @@ aside {
     
     aside, footer {
         flex-direction: column-reverse;
+    }
+}
+
+/*MEDIA QUERY*/
+@media screen and (max-width: 550px) {
+    
+    #identite h1 {
+        font-size: 2.5rem;
+    }
+    
+    .principale {
+        padding: 0 1rem 0 1rem;
+    }
+    
+    .description {
+        flex-direction: column;
+    }
+    
+    .details {
+        width: 100%;
     }
 }

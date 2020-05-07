@@ -1,0 +1,211 @@
+@font-face {
+    font-family: 'aileronultralight';
+    src: url('../polices/aileron-fontfacekit/webfonts/aileron_ultralight_macroman/Aileron-UltraLight-webfont.eot');
+    src: url('../polices/aileron-fontfacekit/webfonts/aileron_ultralight_macroman/Aileron-UltraLight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../polices/aileron-fontfacekit/webfonts/aileron_ultralight_macroman/Aileron-UltraLight-webfont.woff2') format('woff2'),
+         url('../polices/aileron-fontfacekit/webfonts/aileron_ultralight_macroman/Aileron-UltraLight-webfont.woff') format('woff'),
+         url('../polices/aileron-fontfacekit/webfonts/aileron_ultralight_macroman/Aileron-UltraLight-webfont.ttf') format('truetype'),
+         url('../polices/aileron-fontfacekit/webfonts/aileron_ultralight_macroman/Aileron-UltraLight-webfont.svg#aileronultralight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Général */
+#bloc-page {
+    width: auto;
+    margin: auto;
+    /*border: solid black;*/
+    font-family: 'Roboto', sans-serif;
+    overflow-wrap: break-word;
+    letter-spacing: 0.02rem;
+    line-height: 1.5;
+}
+
+header, #main, footer, #photo, #identite, .description, .date, aside, #loisirs, #icones, #contactpro {
+    display: flex;
+}
+
+p {
+    font-size: 0.75rem;
+}
+
+/* HEADER */
+#photo {
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+#photo img {
+    margin: auto;
+    border: solid #FFB300 0.15rem;
+    border-radius: 50%;
+}
+
+#identite {
+    justify-content: center;
+}
+
+#identite h1 {
+    margin: 0 0 0 0;
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.prenom {
+    color: #FFCA28;
+    font-weight: lighter;
+}
+
+.nom {
+    font-family: 'aileronultralight';
+}
+
+#identite h2 {
+    margin: 0 0 0 0;
+    color: #37474F;
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+
+#identite h2 span {
+    border-bottom: solid #FFCA28 0.09rem;
+}
+
+/* MAIN - CONTENU + FOOTER - RECOMMANDATIONS(.titrepp)*/
+.principale {
+    width: 70%;
+    flex-direction: column;
+    padding: 0 2rem 0 2rem;
+    box-sizing: border-box;
+}
+
+.titrepp {
+    padding-bottom: 0.5rem;
+    border-bottom: solid #FFCA28 0.09rem;
+    font-size: 1rem;
+}
+
+.titrepp i {
+    padding-right: 1rem;
+    color: #FFCA28;
+}
+
+.description {
+    justify-content: space-between;
+    padding: 1rem 0 1rem 0;
+}
+
+.description p {
+    margin: 0 0 0.5rem 0;
+}
+
+.date i {
+    padding-right: 1rem;
+    color: #FFCA28;
+}
+
+.details {
+    flex-direction: column;
+    width: 70%;
+    text-align: justify;
+}
+
+.etablissement {
+    font-weight: bold;
+    color: #37474F;
+    font-size: 0.8rem;
+}
+
+/* MAIN - ASIDE + FOOTER - LOISIRS - RECOMMANDATIONS */
+.presentation {
+    width: 30%;
+    background-color: #FFCA28;
+    margin: 0 0 0 0;
+    /*padding-bottom: 1rem;*/
+}
+
+.presentation h1 {
+    text-align: center;
+    background-color: #37474F;
+    color: #FFC500;
+    border: solid #37474F 0.2rem;
+    font-size: 1rem;
+    margin-top: 0;
+}
+
+.presentation p {
+    text-align: justify;
+    margin: 0;
+    padding: 0 2rem 0.5rem 2rem;
+}
+
+aside {
+    flex-direction: column;
+}
+
+#contact {
+    padding-bottom: 1rem;
+}
+
+#apropos {
+    padding-bottom: 1rem;
+}
+
+#loisirs {
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 1rem;
+}
+
+#icones {
+
+    justify-content: space-around;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #37474F;
+}
+
+#icones i, #icones img {
+    border: solid #37474F 0.09rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    border-radius: 50%;
+}
+
+.coordonnees {
+    width: 50%;
+    padding: 0 0 2rem 0;
+}
+
+.coordonnees p {
+    margin-bottom: 0.5rem;
+}
+
+.coordonnees p + p {
+    margin-top: 0;
+}
+
+/*MEDIA QUERY*/
+@media screen and (max-width: 710px) {
+    
+    #bloc_page {
+        width: 100%;
+    }
+    
+    header, #main {
+        flex-direction: column;
+    }
+    
+    #photo, #identite, .presentation, .principale {
+        width: 100%;
+    }
+    
+    #identite, #contenu {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+    aside, footer {
+        flex-direction: column-reverse;
+    }
+}

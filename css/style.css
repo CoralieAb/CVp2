@@ -74,6 +74,7 @@ p {
 }
 
 /* MAIN - CONTENU + FOOTER - RECOMMANDATIONS(.titrepp)*/
+
 .principale {
     width: 70%;
     flex-direction: column;

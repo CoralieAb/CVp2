@@ -11,7 +11,9 @@
 }
 
 /* Général */
-#bloc-page {
+body {
+    max-width: 1190px;
+    min-height: 100vh;
     width: auto;
     margin: auto;
     /*border: solid black;*/
@@ -21,7 +23,7 @@
     line-height: 1.5;
 }
 
-header, #main, footer, #photo, #identite, .description, .date, aside, #loisirs, #icones, #contactpro {
+header, main, footer, #photo, #identite, .description, .date, aside, #loisirs, #icones, #contactpro {
     display: flex;
 }
 
@@ -187,11 +189,7 @@ aside {
 /*MEDIA QUERIES*/
 @media screen and (max-width: 772px) {
     
-    #bloc_page {
-        width: 100%;
-    }
-    
-    header, #main {
+    header, main {
         flex-direction: column;
     }
     

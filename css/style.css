@@ -27,8 +27,12 @@ header, main, footer, #photo, #identite, .description, .date, aside, #loisirs, #
     display: flex;
 }
 
-p {
+p, h3 {
     font-size: 0.9rem;
+}
+
+h3 {
+    margin-top: 0;
 }
 
 /* HEADER */
@@ -174,6 +178,10 @@ aside {
     justify-content: center;
     border: solid #37474F 0.09rem;
     border-radius: 50%;
+}
+
+#contactpro {
+    padding-top: 1rem;
 }
 
 .coordonnees {

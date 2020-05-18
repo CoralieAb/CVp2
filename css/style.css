@@ -228,11 +228,11 @@ aside {
         padding: 0 1rem 0 1rem;
     }
     
-    .description {
+    .description, #contactpro {
         flex-direction: column;
     }
     
-    .details, .date {
+    .details, .date, .coordonnees {
         width: 100%;
     }
 }
